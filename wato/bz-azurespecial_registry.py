@@ -19,7 +19,7 @@ from cmk.gui.plugins.wato.datasource_programs import (
     RulespecGroupDatasourcePrograms,
 )
 
-def _valuespec_special_agents_bz-azure():
+def _valuespec_special_agent_bz-azure():
     return Dictionary(
         elements=[
             ("subId", TextAscii(title=_("SubscriptionId"), allow_empty=False)),
@@ -32,6 +32,6 @@ def _valuespec_special_agents_bz-azure():
 rulespec_registry.register(
     HostRulespec(
         group=RulespecGroupDatasourcePrograms,
-        name="special_agents:bz_azure",
-        valuespec=_valuespec_special_agents_bz-azure,
+        name="special_agents:bz-azure-special",
+        valuespec=_valuespec_special_agent_bz-azure,
     ))
