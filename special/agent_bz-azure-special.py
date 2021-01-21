@@ -1,6 +1,8 @@
-#!/usr/bin/python
+
 
 import argparse 
+import requests
+import json
 
 
 if __name__ == "__main__":
@@ -10,8 +12,14 @@ if __name__ == "__main__":
     required_param_group.add_argument('-s', '--subscription', required=True, help='')
     args = arg_parser.parse_args()
 
+query = '?code=' + args.key + '&subscriptionId='+ args.subscription 
+print(query)
+r = requests.get('https://bzmonitorapi-prd.azurewebsites.net/api/Function1'+ query )
 
 
 
-
-function ()
+if r.status_code == 200:
+    json = json.loads(r.text)
+    print(json); 
+else: 
+    print("Request Error "+r.reason)
