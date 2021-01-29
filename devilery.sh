@@ -3,7 +3,7 @@
 ##Copy WATO 
 mk_path="/monitoring/check_mk/sites/umb_bluezone/"
 
-cp /root/bz-azure-check-mk/wato/bz-azurespecial_registry.py /monitoring/check_mk/sites/umb_bluezone/local/share/check_mk/web/plugins/wato
+cp /root/bz-azure-check-mk/wato/bz-azurespecial_register.py /monitoring/check_mk/sites/umb_bluezone/local/share/check_mk/web/plugins/wato
 
 ## Special Agent  
 
