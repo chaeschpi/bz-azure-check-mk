@@ -12,7 +12,7 @@ from cmk.gui.plugins.wato import (
 )
 from cmk.gui.plugins.wato.datasource_programs import RulespecGroupDatasourcePrograms
 
-def _valuespec_special_agent_bz-azure():
+def _valuespec_special_agent_bzazure():
     return Dictionary(
         title=_("BlueZone Azure Parameters"),
         help=_("This agent is responsible for check if something response on given http port"),
@@ -27,5 +27,5 @@ rulespec_registry.register(
     HostRulespec(
         group=RulespecGroupDatasourcePrograms,
         name="special_agents:bz-azure-special",
-        valuespec=_valuespec_special_agent_bz-azure,
+        valuespec=_valuespec_special_agent_bzazure,
     ))
