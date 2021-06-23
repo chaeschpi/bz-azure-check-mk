@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python
 
 def agent_myspecal_arguments(params):
     args = []
@@ -7,8 +7,5 @@ def agent_myspecal_arguments(params):
     args += ["-s", params['subId']]
 
     return args
-
-
-
 
 special_agent_info['myspecial'] = agent_myspecial_arguments

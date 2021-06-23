@@ -1,5 +1,5 @@
 
-#!/usr/bin/env python3
+#!/usr/bin/python
 # -*- mode: Python; encoding: utf-8; indent-offset: 4; autowrap: nil -*-
 
 from cmk.gui.plugins.wato import (

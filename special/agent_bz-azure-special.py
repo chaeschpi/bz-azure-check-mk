@@ -54,12 +54,6 @@ def serviceHealthSummary(json):
         print(k,v)
     
 
-
-
-
-
-
-
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser()
     required_param_group = arg_parser.add_argument_group('required arguments') 
