@@ -15,7 +15,7 @@ from cmk.gui.plugins.wato.datasource_programs import RulespecGroupDatasourceProg
 def _valuespec_special_agent_bzazure():
     return Dictionary(
         title=_("BlueZone Azure Parameters"),
-        help=_("This agent is responsible for check if something response on given http port"),
+        help=_("Collect Information form Az Portal"),
         optional_keys=[],
         elements=[
              ("subId", TextAscii(title=_("SubscriptionId"), allow_empty=False)),

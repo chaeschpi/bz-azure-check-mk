@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-def agent_myspecal_arguments(params):
+def agent_myspecal_arguments(params, key,subId):
     args = []
 
     args += ["-k", params['key']]
