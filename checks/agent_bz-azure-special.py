@@ -8,4 +8,4 @@ def agent_myspecal_arguments(params):
 
     return args
 
-special_agent_info['myspecial'] = agent_myspecial_arguments
+special_agent_info['myspecial'] = agent_myspecal_arguments
