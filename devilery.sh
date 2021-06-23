@@ -4,7 +4,7 @@
 mk_path="/monitoring/check_mk/sites/umb_bluezone/"
 
 cp /root/bz-azure-check-mk/wato/bz-azurespecial_register.py /monitoring/check_mk/sites/umb_bluezone/local/share/check_mk/web/plugins/wato
-chmod +x 
+
 ## Special Agent  
 
 cp /root/bz-azure-check-mk/special/agent_bz-azure-special.py /monitoring/check_mk/sites/umb_bluezone/local/share/check_mk/agents/special
