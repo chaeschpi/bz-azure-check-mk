@@ -19,7 +19,7 @@ def _valuespec_special_agent_bzazure():
         optional_keys=[],
         elements=[
              ("subId", TextAscii(title=_("SubscriptionId"), allow_empty=False)),
-            ("key", TextAscii(title=_("FunctionKey"), allow_empty=False, hidden=false)),
+            ("key", TextAscii(title=_("FunctionKey"), allow_empty=False, hidden=false))
         ],
     )
 
